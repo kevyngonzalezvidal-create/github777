@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    background: #edf0f1;
+    color: #111;
+    font-family: Arial, sans-serif;
+}
+
+.barra {
+    height: 65px;
+    padding: 0 19%;
+    background: #293d50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.barra nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.barra a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    padding: 7px 12px;
+    border: 0;
+    cursor: pointer;
+}
+
+.barra button {
+    color: white;
+    background: #328fbd;
+    border-radius: 4px;
+}
+
+main {
+    width: 1200px;
+    margin: 36px auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.perfil {
+    box-sizing: border-box;
+    position: relative;
+    width: 710px;
+    min-height: 600px;
+    padding-bottom: 28px;
+    border-radius: 9px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 3px 8px #00000020;
+}
+
+.portada {
+    height: 130px;
+    margin: 0;
+    background: #398fc4;
+    border-radius: 9px 9px 0 0;
+}
+
+.foto {
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 0;
+    transform: translateX(-50%);
+    border: 5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #eeeeee;
+    color: #bfc3c5;
+    line-height: 120px;
+    font-size: 48px;
+}
+
+.perfil h2 {
+    margin: 65px 0 8px;
+}
+
+.lugar {
+    color: #000;
+    font-size: 18px;
+}
+
+.perfil > p:not(.portada):not(.foto) {
+    color: #000;
+    font-size: 18px;
+}
+
+.editar {
+    margin-top: 5px;
+    padding: 0;
+    border: 0;
+    color: #1979ad;
+    background: transparent;
+    border-radius: 0;
+}
+
+.lateral {
+    width: 450px;
+}
+
+.tarjeta {
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    padding: 22px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 3px 8px #00000020;
+}
+
+.amigos {
+    min-height: 400px;
+}
+
+.tarjeta h2 {
+    margin: 2px 0 16px;
+    font-size: 20px;
+}
+
+.persona,
+.amigos p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 18px 0;
+    color: #000;
+    font-size: 17px;
+}
+
+.persona span,
+.amigos span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #eeeeee;
+    color: #bfc3c5;
+    text-align: center;
+    line-height: 40px;
+    font-size: 12px;
+}
+
+.persona span i,
+.amigos span i {
+    font-size: 23px;
+}
+
+.persona .aceptar {
+    width: 26px;
+    height: 26px;
+    margin-left: auto;
+    padding: 0;
+    color: white;
+    background: #2fa79e;
+    border-radius: 50%;
+}
+
+.persona .rechazar {
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    color: white;
+    background: #e4777d;
+    border-radius: 50%;
+}
+
+.ver {
+    float: right;
+    color: #1979ad;
+    background: white;
+    border: 1px solid #1979ad;
+    border-radius: 5px;
+}
+
+.amigos p {
+    margin: 10px 0;
+}
+
+button:hover {
+    opacity: 0.78;
+}
+
+.tarjeta:hover,
+.perfil:hover {
+    box-shadow: 0 5px 12px #00000028;
+}
+
+@media (max-width: 1200px) {
+    .barra {
+        padding: 0 5%;
+    }
+
+    main {
+        width: 90%;
+        gap: 20px;
+    }
+
+    .perfil {
+        width: 58%;
+    }
+
+    .lateral {
+        width: 38%;
+    }
+}
+
+@media (max-width: 650px) {
+    .barra {
+        height: auto;
+        padding: 12px 5%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .barra nav {
+        gap: 12px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .perfil,
+    .lateral {
+        width: 100%;
+    }
+}
